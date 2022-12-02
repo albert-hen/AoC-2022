@@ -1,4 +1,4 @@
-
+inputFile = "input/day2.txt"
 #part 1
 score = 0
 
@@ -10,7 +10,7 @@ gameValues = {
     'C':{'X':6,'Y':0,'Z':3}
     }
 
-with open("day_2_input.txt","r") as f:
+with open(inputFile,"r") as f:
     for line in f.readlines():
         
         n, m = line.split()
@@ -31,7 +31,7 @@ gameValues = {
     'C':{'X':0+2,'Y':3+3,'Z':6+1}
     }
 
-with open("day_2_input.txt","r") as f:
+with open(inputFile,"r") as f:
     for line in f.readlines():
         
         n, m = line.split()

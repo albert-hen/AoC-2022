@@ -1,9 +1,11 @@
 
+inputFile = "input/day1.txt"
+
 #part 1
 cmax = 0
 curr = 0
 
-with open("day_1_input.txt","r") as f:
+with open(inputFile,"r") as f:
     for line in f.readlines():
         l = line.strip()
         if l:
@@ -19,7 +21,7 @@ print(cmax)
 cmax = 0
 curr = 0
 
-with open("day_1_input.txt","r") as f:
+with open(inputFile,"r") as f:
     sums = [sum([int(x) for x in groupstr.split('\n')]) for groupstr in f.read().split('\n\n')]
 print(max(sums))
 
@@ -30,7 +32,7 @@ curr = 0
 
 heap = []
 topN = 3
-with open("day_1_input.txt","r") as f:
+with open(inputFile,"r") as f:
     for line in f.readlines():
         l = line.strip()
         if l:
