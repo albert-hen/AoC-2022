@@ -15,6 +15,14 @@ with open("day_1_input.txt","r") as f:
 
 print(cmax)
 
+#part 1 v2
+cmax = 0
+curr = 0
+
+with open("day_1_input.txt","r") as f:
+    sums = [sum([int(x) for x in groupstr.split('\n')]) for groupstr in f.read().split('\n\n')]
+print(max(sums))
+
 #part2
 import heapq
 cmax = 0
@@ -37,3 +45,5 @@ with open("day_1_input.txt","r") as f:
             curr = 0
 
 print(sum(heap))
+
+
