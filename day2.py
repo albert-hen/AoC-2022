@@ -13,12 +13,12 @@ gameValues = {
 with open("day_2_input.txt","r") as f:
     for line in f.readlines():
         
-        n, m = line.strip().split()
+        n, m = line.split()
 
         curShapeVal = shapeValues[m]
         curGameVal = gameValues[n][m]
 
-        score+= (curShapeVal + curGameVal)
+        score+= curShapeVal + curGameVal
 
 print(score)
 
@@ -34,7 +34,7 @@ gameValues = {
 with open("day_2_input.txt","r") as f:
     for line in f.readlines():
         
-        n, m = line.strip().split()
+        n, m = line.split()
 
         curGameVal = gameValues[n][m]
 
