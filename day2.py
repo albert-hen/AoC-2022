@@ -2,25 +2,35 @@ inputFile = "input/day2.txt"
 #part 1
 score = 0
 
-shapeValues = {'X':1, 'Y':2, 'Z':3}
-
 gameValues = {
-    'A':{'X':3,'Y':6,'Z':0},
-    'B':{'X':0,'Y':3,'Z':6},
-    'C':{'X':6,'Y':0,'Z':3}
+    'A':{'X':3+1,'Y':6+2,'Z':0+3},
+    'B':{'X':0+1,'Y':3+2,'Z':6+3},
+    'C':{'X':6+1,'Y':0+2,'Z':3+3}
     }
 
 with open(inputFile,"r") as f:
     for line in f.readlines():
         
         n, m = line.split()
-
-        curShapeVal = shapeValues[m]
         curGameVal = gameValues[n][m]
 
-        score+= curShapeVal + curGameVal
+        score+= curGameVal
 
 print(score)
+
+#part 1 v2
+gameValues = {
+    'A':{'X':3+1,'Y':6+2,'Z':0+3},
+    'B':{'X':0+1,'Y':3+2,'Z':6+3},
+    'C':{'X':6+1,'Y':0+2,'Z':3+3}
+    }
+
+with open(inputFile,"r") as f:
+    
+    gamescores = [gameValues[n][m] for n,m in map(lambda x: x.split(), f.readlines())]
+    print(sum(gamescores))
+
+
 
 #part 2
 score = 0
