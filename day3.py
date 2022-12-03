@@ -17,25 +17,6 @@ with open(inputFile) as f:
 
     print(prioritySum)
 
-#part 1 v2
-
-with open(inputFile) as f:
-    lines = map(lambda x: x.strip(), f.readlines())
-    prioritySum = 0
-
-    for line in lines:
-        n = len(line)
-        leftChars = set(line[:n//2])
-        rightChars = set(line[n//2:])
-        inboth = list(leftChars.intersection(rightChars))[0]
-        if inboth.islower():
-            prioritySum += ord(inboth) - 97 + 1
-        else:
-            prioritySum += ord(inboth) - 65 + 27
-
-    print(prioritySum)
-
-
 #part 2
 
 with open(inputFile) as f:
