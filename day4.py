@@ -28,8 +28,6 @@ def overlaps(line):
     b1 = int(b1)
     b2 = int(b2)
 
-
-    #return (b1>=a1 and b1 <=a2) or (b2>=a1 and b2 <=a2)
     return (b2 >=a1 and b1 <= a2)
 
 with open(inputFile) as f:
