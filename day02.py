@@ -1,4 +1,4 @@
-inputFile = "input/day2.txt"
+inputFile = "input/day02.txt"
 #part 1
 score = 0
 

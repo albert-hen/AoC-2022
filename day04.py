@@ -1,6 +1,6 @@
 
 #part 1
-inputFile = "input/day4.txt"
+inputFile = "input/day04.txt"
 
 def contains(line):
     a,b = line.split(',')

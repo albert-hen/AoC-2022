@@ -1,5 +1,5 @@
 from collections import deque
-inputFile = 'input/day5.txt'
+inputFile = 'input/day05.txt'
 
 #part 1
 with open(inputFile) as f:

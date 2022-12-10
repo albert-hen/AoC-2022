@@ -1,4 +1,4 @@
-inputfile = 'input/day9.txt'
+inputfile = 'input/day09.txt'
 
 def update(xdif, ydif):
     tx,ty = 0,0

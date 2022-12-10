@@ -1,4 +1,4 @@
-infile = 'input/day8.txt'
+infile = 'input/day08.txt'
 
 
 with open(infile) as f:

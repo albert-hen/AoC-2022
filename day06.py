@@ -1,4 +1,4 @@
-inputFile = 'input/day6.txt'
+inputFile = 'input/day06.txt'
 #part 1
 with open(inputFile) as f:
     firstPacket = 0
@@ -13,7 +13,6 @@ with open(inputFile) as f:
             break
     print(firstPacket)
 
-inputFile = 'input/day6.txt'
 
 #part 2
 with open(inputFile) as f:

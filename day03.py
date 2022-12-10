@@ -1,4 +1,4 @@
-inputFile = "input/day3.txt"
+inputFile = "input/day03.txt"
 
 #part 1
 with open(inputFile) as f:
