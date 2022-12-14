@@ -1,4 +1,4 @@
-infile = 'input/day12.txt'
+infile = 'input/day13.txt'
 
 #split by comma but not by ones within lists
 def split(s):
