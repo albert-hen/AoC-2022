@@ -7,6 +7,7 @@ def sim(obstacles, pourPoint, floory):
     while True:
 
         if cury > floory:
+            #fell into the void
             return False
         if (curx,cury+1) not in obstacles:
             cury += 1
@@ -78,7 +79,6 @@ while True:
 print(count)
 
 #part 2
-#part 1
 pourPoint = (500,0)
 count = 0
 obstacles = rockBlocks.copy()
