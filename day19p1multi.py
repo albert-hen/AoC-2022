@@ -1,6 +1,6 @@
-from functools import lru_cache
 from math import ceil
 infile = 'input/day19.txt'
+
 with open(infile) as f: inp = f.readlines()
 
 inp = [x.split() for x in inp]
@@ -9,9 +9,7 @@ inp = [[int(x[6]), int(x[12]),(int(x[18]), int(x[21])),(int(x[27]), int(x[30]))]
 
 #dfs on every decision point
 
-maxGeo = 0
-
-def dfs(built,time, oreBots, clayBots, obsBots, geoBots, ore, clay, obs, geo, blueprint, timeLimit = 24):
+def dfs(ans, built,time, oreBots, clayBots, obsBots, geoBots, ore, clay, obs, geo, blueprint, timeLimit = 24):
     
     oreBotCost = blueprint[0]
     clayBotCost = blueprint[1]

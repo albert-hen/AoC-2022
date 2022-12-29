@@ -92,12 +92,11 @@ def dfs(built,time, oreBots, clayBots, obsBots, geoBots, ore, clay, obs, geo, bl
 
 
 ans = 0
-for i in range(1,len(inp)+1):
+for i in range(1,4):
     maxGeo = 0
-    dfs([],1,1,0,0,0,0,0,0,0,inp[i-1])
+    dfs([],1,1,0,0,0,0,0,0,0,inp[i-1],timeLimit=32)
     print(f'blueprint {i} opens {maxGeo} geodes')
     ans += maxGeo*i
-
 print(ans)
 
 #['claybot', 'claybot', 'claybot', 'obsbot', 'claybot', 'obsbot', 'geobot', 'geobot']
